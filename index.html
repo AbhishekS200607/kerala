@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerala Spice & Coffee Exports | Premium Indian Spices & Coffee Beans</title>
+  <meta name="description" content="Premium Indian spices and coffee beans exported from Kerala. Bulk supply of cardamom, pepper, cloves, ginger, turmeric, and coffee beans for international buyers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            parchment: "#F5EFE4",
+            maroon: "#7B1F1F",
+            ink: "#4A3520",
+            gold: "#C9A96E",
+            forest: "#2C3A1E",
+            mutedBrown: "#7B6A58"
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            script: ['"Dancing Script"', "cursive"],
+            body: ['"DM Sans"', "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 18px 50px rgba(74, 53, 32, 0.12)",
+            card: "0 12px 30px rgba(74, 53, 32, 0.10)"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #F5EFE4; color: #4A3520; font-family: "DM Sans", sans-serif; }
+    .hero-scene {
+      background:
+        linear-gradient(90deg, rgba(245,239,228,0.98) 0%, rgba(245,239,228,0.94) 39%, rgba(245,239,228,0.38) 64%, rgba(245,239,228,0.08) 100%),
+        radial-gradient(circle at 78% 10%, rgba(201,169,110,0.35), transparent 30%),
+        linear-gradient(180deg, rgba(245,239,228,0.12), rgba(245,239,228,0.72)),
+        url("assets/images/hero-bg.png");
+      background-size: cover;
+      background-position: center right;
+    }
+    .backwater-illustration {
+      background:
+        radial-gradient(circle at 78% 28%, rgba(201,169,110,0.18), transparent 18%),
+        linear-gradient(178deg, transparent 0 52%, rgba(44,58,30,0.10) 53% 56%, transparent 57%),
+        linear-gradient(168deg, transparent 0 62%, rgba(123,31,31,0.10) 63% 67%, transparent 68%),
+        linear-gradient(180deg, rgba(255,255,255,0.18), rgba(245,239,228,0.86));
+    }
+    .nav-link.active { border-bottom-color: #7B1F1F; color: #7B1F1F; }
+    .product-scroll { scroll-behavior: smooth; scrollbar-width: none; }
+    .product-scroll::-webkit-scrollbar { display: none; }
+    @media (min-width: 640px) {
+      .export-card-img { position: absolute; bottom: 0; right: -2rem; }
+      [dir="rtl"] .export-card-img { right: auto; left: -2rem; }
+      [dir="rtl"] .export-card-div { margin-left: auto; }
+    }
+  </style>
+</head>
+<body class="font-body overflow-x-hidden">
+  <header id="site-header" class="fixed top-3 left-0 right-0 z-50 px-4 sm:px-6 transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto bg-parchment/95 backdrop-blur rounded-[2rem] border border-gold/35 shadow-card px-4 sm:px-6">
+      <div class="relative grid grid-cols-[1fr_auto_1fr] items-center gap-3 py-3 border-b border-gold/35">
+        <div class="flex items-center">
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="inline-flex items-center gap-2 bg-maroon text-white text-xs sm:text-sm font-bold px-5 py-2.5 rounded-full tracking-wide">
+            <span data-key="orderNow">Order Now</span>
+          </a>
+        </div>
+
+        <a href="index.html" class="text-center" aria-label="Kerala Spice & Coffee Exports home">
+          <svg class="mx-auto mb-1" width="28" height="24" viewBox="0 0 38 32" fill="none" aria-hidden="true">
+            <path d="M19 2C12 7 8 13 9 19c1 7 8 11 10 11s9-4 10-11C30 13 26 7 19 2Z" fill="#2C3A1E"/>
+            <path d="M19 7v20M13 15c4-1 8-1 12 0M12 20c5-2 10-2 14 0" stroke="#C9A96E" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+          <span class="block font-display text-base sm:text-lg font-black leading-none text-ink">Kerala Spice & Coffee</span>
+          <span class="block mt-1 text-[9px] tracking-[0.24em] font-bold text-mutedBrown">EXPORTS</span>
+        </a>
+
+        <div class="flex items-center justify-end gap-3 text-ink">
+          <div class="hidden md:flex items-center gap-1 border border-gold/40 rounded-full px-2 py-1 text-xs font-bold">
+            <button onclick="setLang('en')" id="btn-en" class="lang-btn px-2 py-0.5 rounded-full bg-maroon text-white">EN</button>
+            <button onclick="setLang('ar')" id="btn-ar" class="lang-btn px-2 py-0.5 rounded-full">AR</button>
+          </div>
+          <button id="menu-toggle" class="p-1 md:hidden" aria-label="Open menu">
+            <svg id="icon-open" width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg id="icon-close" class="hidden" width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+
+
+      </div>
+
+      <nav class="hidden md:flex items-center justify-center gap-9 py-4 text-xs font-bold tracking-[0.15em] text-ink">
+        <a href="index.html" class="nav-link active border-b-2 border-transparent pb-1">HOME</a>
+        <a href="about.html" class="nav-link border-b-2 border-transparent pb-1 hover:text-maroon">ABOUT US</a>
+        <a href="products.html" class="nav-link border-b-2 border-transparent pb-1 hover:text-maroon inline-flex items-center gap-1">PRODUCTS <svg width="10" height="7" viewBox="0 0 10 7" fill="none"><path d="m1 1.5 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+        <a href="#services" class="nav-link border-b-2 border-transparent pb-1 hover:text-maroon">SERVICES</a>
+        <a href="inquiry.html" class="nav-link border-b-2 border-transparent pb-1 hover:text-maroon">INQUIRY/QUOTE</a>
+        <a href="contact.html" class="nav-link border-b-2 border-transparent pb-1 hover:text-maroon">CONTACT US</a>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden pb-5">
+        <div class="grid gap-2 text-sm font-bold tracking-[0.12em]">
+          <a href="index.html" class="py-2 text-maroon">HOME</a>
+          <a href="about.html" class="py-2">ABOUT US</a>
+          <a href="products.html" class="py-2">PRODUCTS</a>
+          <a href="#services" class="py-2">SERVICES</a>
+          <a href="inquiry.html" class="py-2">INQUIRY/QUOTE</a>
+          <a href="contact.html" class="py-2">CONTACT US</a>
+          <div class="pt-2 border-t border-gold/20 flex items-center gap-2">
+            <button onclick="setLang('en')" id="btn-en" class="lang-btn px-3 py-1 rounded-full bg-maroon text-white text-xs font-bold">EN</button>
+            <button onclick="setLang('ar')" id="btn-ar" class="lang-btn px-3 py-1 rounded-full border border-gold/40 text-xs font-bold">AR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-scene relative min-h-[85vh] pt-44 md:pt-48 overflow-hidden">
+      <div class="absolute inset-0 backwater-illustration opacity-70 pointer-events-none"></div>
+      <svg class="absolute top-28 right-4 md:right-12 w-36 md:w-56 opacity-30 text-forest" viewBox="0 0 220 180" fill="none" aria-hidden="true">
+        <path d="M120 168C93 113 116 51 205 19c-3 96-42 143-85 149Z" fill="currentColor"/><path d="M125 160c23-45 44-85 72-127" stroke="#F5EFE4" stroke-width="4" stroke-linecap="round"/><path d="M82 168C57 121 64 67 10 29c-10 86 26 128 72 139Z" fill="#C9A96E"/><path d="M76 158C59 113 43 77 18 43" stroke="#F5EFE4" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-[0.42fr_0.58fr] gap-10 items-center pb-16">
+        <div>
+          <p class="inline-flex items-center gap-2 text-gold text-xs font-black tracking-[0.18em] uppercase mb-5">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 2C6 5 3 8 4 12c1 5 6 6 6 6s5-1 6-6c1-4-2-7-6-10Z" fill="currentColor"/></svg>
+<span data-key="premiumQuality">Premium Quality</span>
+          </p>
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.95] text-ink" data-key="heroTitle">Premium Indian Spices & Coffee Beans</h1>
+          <p class="font-script text-4xl sm:text-5xl text-maroon mt-4" data-key="heroSub">Exported from Kerala</p>
+          <p class="text-mutedBrown text-lg leading-relaxed mt-6 max-w-xl" data-key="heroDesc">Direct-from-source Kerala spices and plantation coffee for international bulk buyers. Carefully selected, export packed, and shipped with reliable documentation.</p>
+          <div class="flex flex-col sm:flex-row gap-4 mt-9">
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="inline-flex items-center justify-center gap-2 bg-maroon text-white font-bold px-6 py-3.5 rounded-full shadow-card">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.8-3.3-2.7-3.4-2.9-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4ZM12 2a10 10 0 0 0-8.5 15.3L2.3 22l4.8-1.3A10 10 0 1 0 12 2Z"/></svg>
+              <span data-key="ctaWhatsapp">Get Quote on WhatsApp</span>
+            </a>
+            <a href="inquiry.html" class="inline-flex items-center justify-center gap-2 bg-white border border-gold text-ink font-bold px-6 py-3.5 rounded-full">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M7 3h7l4 4v14H7V3Z" stroke="currentColor" stroke-width="1.8"/><path d="M14 3v5h5M9 13h6M9 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span data-key="ctaPriceList">Request Price List</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-[2rem] overflow-hidden shadow-soft bg-white/50 border border-white/70 p-4">
+            <div class="grid grid-cols-12 gap-3 h-[430px] sm:h-[520px]">
+              <img src="assets/images/cardamom.png" alt="Green cardamom bowl" class="col-span-7 row-span-2 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/pepper.png" alt="Black pepper bowl" class="col-span-5 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/cloves.png" alt="Whole cloves" class="col-span-5 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/turmeric.png" alt="Turmeric fingers" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/robusta.png" alt="Robusta coffee beans" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/ginge.png" alt="Ginger root" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
+            </div>
+          </div>
+          <div class="absolute bottom-5 right-5 flex gap-3">
+            <button class="h-11 w-11 rounded-full bg-white/95 border border-gold text-ink shadow-card" aria-label="Previous hero image">‹</button>
+            <button class="h-11 w-11 rounded-full bg-maroon text-white shadow-card" aria-label="Next hero image">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative z-20 -mt-10 px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto bg-white rounded-2xl shadow-soft border border-gold/20 grid sm:grid-cols-2 lg:grid-cols-5 overflow-hidden">
+        <div class="p-6 text-center border-b sm:border-r border-gold/20"><svg class="mx-auto text-forest mb-3" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 3C7 7 5 10 6 14c1 5 6 7 6 7s5-2 6-7c1-4-1-7-6-11Z" fill="currentColor"/></svg><p class="font-bold" data-key="f1t">100% Natural</p><p class="text-sm text-mutedBrown" data-key="f1s">Pure & Authentic</p></div>
+        <div class="p-6 text-center border-b lg:border-r border-gold/20"><svg class="mx-auto text-forest mb-3" width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="5" stroke="currentColor" stroke-width="1.8"/><path d="m8 14-2 7 6-3 6 3-2-7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><p class="font-bold" data-key="f2t">Export Quality</p><p class="text-sm text-mutedBrown" data-key="f2s">International Standards</p></div>
+        <div class="p-6 text-center border-b sm:border-r border-gold/20"><svg class="mx-auto text-forest mb-3" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M8 12 4 16l3 3 4-4M16 12l4 4-3 3-4-4M9 11l2-2h3l2 2M8 12h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="font-bold" data-key="f3t">Direct from Source</p><p class="text-sm text-mutedBrown" data-key="f3s">Farmers & Plantations</p></div>
+        <div class="p-6 text-center border-b lg:border-r border-gold/20"><svg class="mx-auto text-forest mb-3" width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" stroke="currentColor" stroke-width="1.5"/></svg><p class="font-bold" data-key="f4t">Worldwide Shipping</p><p class="text-sm text-mutedBrown" data-key="f4s">On-time & Reliable</p></div>
+        <div class="p-6 text-center"><svg class="mx-auto text-forest mb-3" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="m4 8 8-4 8 4-8 4-8-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 8v8l8 4 8-4V8M12 12v8" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><p class="font-bold" data-key="f5t">Bulk Supply</p><p class="text-sm text-mutedBrown" data-key="f5s">MOQ Friendly</p></div>
+      </div>
+    </section>
+
+    <section class="relative py-24 overflow-hidden">
+      <svg class="absolute -left-12 top-24 w-48 opacity-10 text-maroon" viewBox="0 0 160 220" fill="currentColor" aria-hidden="true"><circle cx="80" cy="70" r="45"/><path d="M39 122c29 22 55 22 82 0 0 55-82 55-82 0Z"/><path d="M20 70c15-40 105-40 120 0-23-12-97-12-120 0Z"/></svg>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-[0.95fr_1.2fr_0.65fr] gap-10 items-center">
+        <div>
+          <p class="text-gold text-xs font-black tracking-[0.18em] uppercase mb-4" data-key="aboutLabel">About Us</p>
+          <h2 class="font-display text-4xl sm:text-5xl font-black leading-tight mb-6" data-key="aboutTitle">Kerala's Finest, Delivered to the World</h2>
+          <p class="text-mutedBrown leading-relaxed mb-7" data-key="aboutDesc">Kerala Spice & Coffee Exports connects international bulk buyers with the finest spices and coffee beans from Kerala's trusted farmers and plantations. We focus on careful selection, export-grade packing, clear documentation, and reliable shipping support for repeat trade partnerships.</p>
+          <a href="about.html" class="inline-flex border border-maroon text-maroon font-bold px-6 py-3 rounded-full" data-key="aboutLink">Know More About Us →</a>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <figure class="relative sm:translate-y-8 rounded-3xl overflow-hidden shadow-card border-4 border-white"><img src="assets/images/about-farm.png" alt="Kerala plantation aerial view" class="h-80 w-full object-cover"><figcaption class="absolute left-4 bottom-4 bg-white/90 text-ink font-bold px-4 py-2 rounded-full text-sm">From Kerala Plantations</figcaption></figure>
+          <figure class="relative rounded-3xl overflow-hidden shadow-card border-4 border-white"><img src="assets/images/cardamom.png" alt="Premium cardamom close-up" class="h-80 w-full object-cover"><figcaption class="absolute left-4 bottom-4 bg-white/90 text-ink font-bold px-4 py-2 rounded-full text-sm">Carefully Selected Premium Quality</figcaption></figure>
+        </div>
+        <div class="grid gap-5">
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">10+</p><p class="font-bold">Years of Experience</p><p class="text-sm text-mutedBrown">Export handling knowledge</p></div>
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">500+</p><p class="font-bold">Happy Clients</p><p class="text-sm text-mutedBrown">Across trade channels</p></div>
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">50+</p><p class="font-bold">Countries Exported</p><p class="text-sm text-mutedBrown">Global buyer network</p></div>
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">100%</p><p class="font-bold">Customer Satisfaction</p><p class="text-sm text-mutedBrown">Quality focused supply</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-[#F1E7D8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-gold font-black text-xs tracking-[0.2em] uppercase" data-key="productsLabel">◆ Our Products ◆</p>
+          <h2 class="font-display text-5xl font-black mt-3" data-key="productsTitle">What We Export</h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+          <article class="relative overflow-hidden bg-parchment border border-gold/35 rounded-[2rem] p-8 shadow-card flex flex-col sm:block">
+            <div class="export-card-div relative z-10 max-w-[58%]"><p class="text-maroon tracking-[0.18em] font-black mb-3" data-key="spicesLabel">SPICES</p><h3 class="font-display text-2xl sm:text-3xl font-black mb-3" data-key="spicesTitle">Kerala Spices</h3><p class="text-mutedBrown mb-6 text-sm" data-key="spicesDesc">Aromatic export-grade cardamom, pepper, cloves, ginger, and turmeric.</p><a href="products.html" class="inline-flex border border-maroon text-maroon font-bold px-4 py-2.5 text-sm rounded-full" data-key="spicesLink">View All Spices →</a></div>
+            <img src="assets/images/spice-flatlay.png" alt="Spice flatlay" class="export-card-img mt-6 mx-auto w-48 h-48 sm:mt-0 sm:mx-0 sm:absolute sm:bottom-0 sm:w-60 sm:h-60 object-cover rounded-full border-8 border-white shadow-card">
+          </article>
+          <article class="relative overflow-hidden bg-parchment border border-gold/35 rounded-[2rem] p-8 shadow-card flex flex-col sm:block">
+            <div class="export-card-div relative z-10 max-w-[58%]"><p class="text-maroon tracking-[0.18em] font-black mb-3" data-key="coffeeLabel">COFFEE BEANS</p><h3 class="font-display text-2xl sm:text-3xl font-black mb-3" data-key="coffeeTitle">Plantation Coffee</h3><p class="text-mutedBrown mb-6 text-sm" data-key="coffeeDesc">Robusta, Arabica, and green coffee beans for roasters and importers.</p><a href="products.html" class="inline-flex border border-maroon text-maroon font-bold px-4 py-2.5 text-sm rounded-full" data-key="coffeeLink">View All Coffee Beans →</a></div>
+            <img src="assets/images/robusta.png" alt="Robusta coffee beans" class="export-card-img mt-6 mx-auto w-48 h-48 sm:mt-0 sm:mx-0 sm:absolute sm:bottom-0 sm:w-60 sm:h-60 object-cover rounded-full border-8 border-white shadow-card">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="bg-forest py-10 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="flex items-center gap-4"><svg width="38" height="38" viewBox="0 0 24 24" fill="none"><path d="M3 15h18l-3 4H7l-4-4ZM5 15l3-8h8l3 8M9 7V4h6v3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><p class="font-bold" data-key="s1">Worldwide Shipping</p></div>
+        <div class="flex items-center gap-4"><svg width="38" height="38" viewBox="0 0 24 24" fill="none"><path d="m4 8 8-4 8 4-8 4-8-4ZM4 8v8l8 4 8-4V8" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><p class="font-bold" data-key="s2">Bulk Supply MOQ Friendly</p></div>
+        <div class="flex items-center gap-4"><svg width="38" height="38" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="5" stroke="currentColor" stroke-width="1.8"/><path d="m8 14-2 7 6-3 6 3-2-7" stroke="currentColor" stroke-width="1.8"/></svg><p class="font-bold" data-key="s3">Quality Assured Every Time</p></div>
+        <div class="flex items-center gap-4"><svg width="38" height="38" viewBox="0 0 24 24" fill="none"><path d="M12 3C7 7 5 10 6 14c1 5 6 7 6 7s5-2 6-7c1-4-1-7-6-11Z" fill="currentColor"/></svg><p class="font-bold" data-key="s4">Sustainably Sourced</p></div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-gold font-black text-xs tracking-[0.2em] uppercase" data-key="favLabel">◆ Our Popular Products ◆</p>
+          <h2 class="font-display text-5xl font-black mt-3" data-key="favTitle">Buyer Favorites</h2>
+        </div>
+        <div class="relative">
+          <button data-carousel="prev" class="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-11 w-11 items-center justify-center rounded-full bg-white border border-gold shadow-card">‹</button>
+          <div id="product-carousel" class="product-scroll flex gap-5 overflow-x-auto snap-x pb-3">
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/cardamom.png" alt="Green Cardamom" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Green Cardamom</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/pepper.png" alt="Black Pepper" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Black Pepper</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/cloves.png" alt="Cloves" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Cloves</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/ginge.png" alt="Dry Ginger" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Dry Ginger</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/turmeric.png" alt="Turmeric Fingers" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Turmeric Fingers</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+          </div>
+          <button data-carousel="next" class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-11 w-11 items-center justify-center rounded-full bg-maroon text-white shadow-card">›</button>
+        </div>
+        <div class="text-center mt-10"><a href="products.html" class="inline-flex border border-maroon text-maroon font-bold px-7 py-3 rounded-full" data-key="viewAll">View All Products →</a></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="bg-forest py-16 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <p class="text-gold font-black text-xs tracking-[0.2em] uppercase mb-3" data-key="catalogLabel">◆ Product Catalog ◆</p>
+        <h2 class="font-display text-4xl md:text-5xl font-black leading-tight" data-key="catalogTitle">Download Our Export Catalog</h2>
+        <p class="text-white/70 mt-3 max-w-lg" data-key="catalogDesc">Get our full product list with packaging details, MOQ, and export specifications as a PDF.</p>
+      </div>
+      <a href="assets/catalog.html" target="_blank" class="shrink-0 inline-flex items-center gap-3 bg-gold text-ink font-bold px-8 py-4 rounded-full shadow-soft">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v13M7 11l5 5 5-5M5 20h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-key="catalogBtn">Download Catalog (PDF)</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-[#241B16] text-white pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-4 gap-10 pb-12">
+      <div><p class="font-display text-2xl font-black">Kerala Spice & Coffee</p><p class="text-xs tracking-[0.25em] text-gold font-bold mt-1">EXPORTS</p><p class="text-white/65 mt-5 leading-relaxed">Premium Kerala spices and plantation coffee beans for international bulk buyers.</p></div>
+      <div><p class="font-bold mb-5">Quick Links</p><a class="block text-white/65 hover:text-gold mb-3" href="index.html">Home</a><a class="block text-white/65 hover:text-gold mb-3" href="about.html">About Us</a><a class="block text-white/65 hover:text-gold mb-3" href="products.html">Products</a><a class="block text-white/65 hover:text-gold" href="contact.html">Contact</a></div>
+      <div><p class="font-bold mb-5">Products</p><a class="block text-white/65 hover:text-gold mb-3" href="products.html">Green Cardamom</a><a class="block text-white/65 hover:text-gold mb-3" href="products.html">Black Pepper</a><a class="block text-white/65 hover:text-gold mb-3" href="products.html">Coffee Beans</a><a class="block text-white/65 hover:text-gold" href="products.html">Turmeric Fingers</a></div>
+      <div><p class="font-bold mb-5">Contact</p><p class="text-white/65 leading-8">Kerala, India<br>+91 XXXXXXXXXX<br>info@keralaspiceexports.com</p></div>
+    </div>
+    <div class="border-t border-white/10 py-5 text-center text-sm text-white/50">© 2025 Kerala Spice & Coffee Exports. All Rights Reserved.</div>
+  </footer>
+
+  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-5 py-3 rounded-full shadow-soft">
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.8-3.3-2.7-3.4-2.9-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4ZM12 2a10 10 0 0 0-8.5 15.3L2.3 22l4.8-1.3A10 10 0 1 0 12 2Z"/></svg>
+    <span data-key="whatsappUs">WhatsApp Us</span>
+  </a>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    const header = document.getElementById("site-header");
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const iconOpen = document.getElementById("icon-open");
+    const iconClose = document.getElementById("icon-close");
+    const carousel = document.getElementById("product-carousel");
+    window.addEventListener("scroll", () => header.classList.toggle("shadow-soft", window.scrollY > 12));
+    menuToggle.addEventListener("click", () => { mobileMenu.classList.toggle("hidden"); iconOpen.classList.toggle("hidden"); iconClose.classList.toggle("hidden"); });
+    document.querySelectorAll("[data-carousel]").forEach(btn => btn.addEventListener("click", () => carousel.scrollBy({ left: (btn.dataset.carousel === "next" ? 1 : -1) * 300, behavior: "smooth" })));
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".nav-link").forEach(link => { if (link.getAttribute("href") === currentPage) link.classList.add("active"); });
+  </script>
+</body>
+</html>
