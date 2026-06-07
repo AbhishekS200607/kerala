@@ -1,24 +1,24 @@
 const translations = {
   en: {
     orderNow: 'Order Now', whatsappUs: 'WhatsApp Us',
-    // Hero
     premiumQuality: 'Premium Quality',
     heroTitle: 'Premium Indian Spices & Coffee Beans',
     heroSub: 'Exported from Kerala',
     heroDesc: 'Direct-from-source Kerala spices and plantation coffee for international bulk buyers. Carefully selected, export packed, and shipped with reliable documentation.',
     ctaWhatsapp: 'Get Quote on WhatsApp', ctaPriceList: 'Request Price List',
-    // Features strip
     f1t: '100% Natural', f1s: 'Pure & Authentic',
     f2t: 'Export Quality', f2s: 'International Standards',
     f3t: 'Direct from Source', f3s: 'Farmers & Plantations',
     f4t: 'Worldwide Shipping', f4s: 'On-time & Reliable',
     f5t: 'Bulk Supply', f5s: 'MOQ Friendly',
-    // About section (index)
     aboutLabel: 'About Us',
     aboutTitle: "Kerala's Finest, Delivered to the World",
     aboutDesc: "Kerala Spice & Coffee Exports connects international bulk buyers with the finest spices and coffee beans from Kerala's trusted farmers and plantations. We focus on careful selection, export-grade packing, clear documentation, and reliable shipping support for repeat trade partnerships.",
     aboutLink: 'Know More About Us →',
-    // Products section (index)
+    stat1n: '10+', stat1l: 'Years of Experience', stat1s: 'Export handling knowledge',
+    stat2n: '500+', stat2l: 'Happy Clients', stat2s: 'Across trade channels',
+    stat3n: '50+', stat3l: 'Countries Exported', stat3s: 'Global buyer network',
+    stat4n: '100%', stat4l: 'Customer Satisfaction', stat4s: 'Quality focused supply',
     productsLabel: '◆ Our Products ◆', productsTitle: 'What We Export',
     spicesLabel: 'SPICES', spicesTitle: 'Kerala Spices',
     spicesDesc: 'Aromatic export-grade cardamom, pepper, cloves, ginger, and turmeric.',
@@ -26,30 +26,95 @@ const translations = {
     coffeeLabel: 'COFFEE BEANS', coffeeTitle: 'Plantation Coffee',
     coffeeDesc: 'Robusta, Arabica, and green coffee beans for roasters and importers.',
     coffeeLink: 'View All Coffee Beans →',
-    // Services
     s1: 'Worldwide Shipping', s2: 'Bulk Supply MOQ Friendly',
     s3: 'Quality Assured Every Time', s4: 'Sustainably Sourced',
-    // Buyer favorites
     favLabel: '◆ Our Popular Products ◆', favTitle: 'Buyer Favorites',
     viewAll: 'View All Products →',
-    // Catalog
     catalogLabel: '◆ Product Catalog ◆', catalogTitle: 'Download Our Export Catalog',
     catalogDesc: 'Get our full product list with packaging details, MOQ, and export specifications as a PDF.',
     catalogBtn: 'Download Catalog (PDF)',
+    // Sticky bar
+    stickyText: "Get Today's Export Price →",
+    stickyBtn: 'WhatsApp Now',
+    // WA chat
+    waChatTitle: 'Kerala Spice & Coffee',
+    waChatSub: 'Typically replies instantly',
+    waChatMsg: 'Hi! How can we help you? Send us your inquiry and we\'ll reply shortly.',
+    waChatSend: 'Send',
+    waChatPlaceholder: 'Type a message...',
+    // Why Choose Us
+    whyLabel: '◆ Why Choose Us ◆',
+    whyTitle: "We're Different",
+    whyFeature: 'Feature',
+    whyUs: 'Kerala Spice & Coffee',
+    whyThem: 'Typical Traders',
+    why1f: 'Source', why1us: 'Direct from farm', why1them: 'Multiple middlemen',
+    why2f: 'Quality Control', why2us: 'Hand-graded, export-grade', why2them: 'Mixed grades',
+    why3f: 'Documentation', why3us: 'Full export docs provided', why3them: 'Often incomplete',
+    why4f: 'Certifications', why4us: 'APEDA, FSSAI registered', why4them: 'Varies',
+    why5f: 'MOQ', why5us: 'Buyer-friendly MOQ', why5them: 'High minimums',
+    why6f: 'Communication', why6us: 'Direct WhatsApp & Email', why6them: 'Slow response',
+    // Certifications
+    certLabel: '◆ Certifications & Registrations ◆',
+    certTitle: 'Trusted & Verified',
+    cert1name: 'APEDA', cert1desc: 'Agricultural & Processed Food Products Export Development Authority',
+    cert2name: 'FSSAI', cert2desc: 'Food Safety & Standards Authority of India — Licensed & Compliant',
+    cert3name: 'Export Ready', cert3desc: 'Full phytosanitary, COO & shipping documentation provided',
+    cert4name: 'Spices Board', cert4desc: 'Registered with Spices Board of India for quality assurance',
+    // Target Markets
+    marketsLabel: '◆ Our Export Markets ◆',
+    marketsTitle: 'Countries We Export To',
+    // Packaging
+    packLabel: '◆ Packaging ◆',
+    packTitle: 'Export Packaging Options',
+    pack1title: 'Jute Bags',
+    pack1desc: 'Traditional breathable jute bags ideal for spices — eco-friendly and export standard.',
+    pack1f1: '25kg & 50kg options', pack1f2: 'Breathable, moisture-resistant liner', pack1f3: 'Custom labelling available',
+    pack2title: 'GrainPro Bags',
+    pack2desc: 'Hermetically sealed bags perfect for green coffee beans — preserves freshness for long voyages.',
+    pack2f1: 'Airtight hermetic seal', pack2f2: 'Prevents moisture & pests', pack2f3: 'Preferred by specialty roasters',
+    pack3title: 'PP Woven Bags',
+    pack3desc: 'Durable polypropylene woven sacks for bulk spices and turmeric — strong and cost-effective.',
+    pack3f1: '25kg, 50kg & 1-ton jumbo bags', pack3f2: 'UV & tear resistant', pack3f3: 'Custom printing on bag',
+    // Seasonal calendar
+    calLabel: '◆ Harvest Calendar ◆',
+    calTitle: 'Seasonal Availability',
+    calDesc: 'Plan your purchases around peak harvest months for best quality & pricing',
+    calProduct: 'Product',
+    calLegGrow: 'Growing', calLegDev: 'Developing', calLegHarv: 'Harvesting', calLegPeak: 'Peak Season',
+    // FAQ
+    faqLabel: '◆ FAQ ◆',
+    faqTitle: 'Common Questions',
+    faq1q: 'What is the Minimum Order Quantity (MOQ)?',
+    faq1a: "MOQ varies by product: Spices start from 100kg, Coffee Beans from 200kg. We're flexible for first-time buyers — contact us to discuss your requirements.",
+    faq2q: 'What payment terms do you offer?',
+    faq2a: 'We accept T/T (Bank Transfer), Letter of Credit (LC), and advance payment for new buyers. Payment terms are negotiable for established trade partners.',
+    faq3q: 'How long does shipping take?',
+    faq3a: 'UAE & Middle East: 7–12 days. Europe: 18–25 days. USA: 20–30 days. Delivery timelines depend on port and customs clearance at destination.',
+    faq4q: 'What export documents do you provide?',
+    faq4a: 'We provide: Commercial Invoice, Packing List, Certificate of Origin, Phytosanitary Certificate, Bill of Lading, and FSSAI / APEDA certificates as required.',
+    faq5q: 'Do you offer custom packaging or private label?',
+    faq5a: 'Yes! We offer custom bag printing and private label packaging for bulk buyers. Minimum quantities apply — contact us for details.',
+    faq6q: 'Which incoterms do you support?',
+    faq6a: 'We support FOB (Cochin / Chennai), CIF, and CFR to all major global ports. We work with trusted freight forwarders for reliable transit.',
     // Products page
     pHeroLabel: '◆ Our Products ◆', pHeroTitle: 'What We Export', pHeroSub: 'Premium Kerala produce for global buyers',
     filterAll: 'All', filterSpice: 'Spices', filterCoffee: 'Coffee Beans',
     getQuote: 'Get Quote →',
+    p1name: 'Green Cardamom', p1pack: '25kg / 50kg Bags · MOQ: 100kg',
+    p2name: 'Black Pepper',   p2pack: '25kg / 50kg Bags · MOQ: 100kg',
+    p3name: 'Cloves',         p3pack: '25kg / 50kg Bags · MOQ: 50kg',
+    p4name: 'Dry Ginger',     p4pack: '25kg / 50kg Bags · MOQ: 100kg',
+    p5name: 'Turmeric Fingers',p5pack: '25kg / 50kg Bags · MOQ: 100kg',
+    p6name: 'Robusta Coffee', p6pack: '25kg / 50kg Bags · MOQ: 200kg',
+    p7name: 'Arabica Coffee', p7pack: '25kg / 50kg Bags · MOQ: 200kg',
+    p8name: 'Green Coffee Beans', p8pack: '25kg / 50kg Bags · MOQ: 200kg',
     // About page
     aHeroLabel: 'About Us', aHeroTitle: "Kerala's Finest, Delivered to the World", aHeroSub: 'Rooted in quality and tradition',
     ourStoryLabel: 'Our Story',
     ourStoryTitle: 'Direct sourcing from Kerala farmers and plantations',
     ourStoryP1: 'Kerala Spice & Coffee Exports supplies international bulk buyers with carefully selected spices and coffee beans from Kerala. Our work is built around consistent quality, transparent trade communication, export-grade packaging, and reliable shipment coordination.',
     ourStoryP2: 'From cardamom and pepper to Robusta and Arabica coffee, every shipment is handled with attention to grading, packing, and documentation.',
-    stat1l: 'Years of Experience', stat1s: 'Export handling knowledge',
-    stat2l: 'Happy Clients', stat2s: 'Repeat trade relationships',
-    stat3l: 'Countries Exported', stat3s: 'Worldwide buyer network',
-    stat4l: 'Quality Focus', stat4s: 'Carefully selected goods',
     valuesLabel: '◆ Our Values ◆', valuesTitle: 'How We Work',
     v1t: 'Quality', v1d: 'Careful sourcing, grading, and export packing.',
     v2t: 'Transparency', v2d: 'Clear MOQ, pricing terms, and documentation.',
@@ -84,6 +149,10 @@ const translations = {
     aboutTitle: 'أفضل ما في كيرالا، يصل إلى العالم',
     aboutDesc: 'تربط كيرالا سبايس للتصدير المشترين الدوليين بأفضل التوابل وحبوب القهوة من مزارعي كيرالا الموثوقين. نركز على الاختيار الدقيق والتعبئة بمعايير التصدير والتوثيق الواضح.',
     aboutLink: 'اعرف المزيد عنا →',
+    stat1n: '+١٠', stat1l: 'سنوات من الخبرة', stat1s: 'معرفة في التعامل مع التصدير',
+    stat2n: '+٥٠٠', stat2l: 'عملاء سعداء', stat2s: 'عبر قنوات التجارة',
+    stat3n: '+٥٠', stat3l: 'دولة صدرنا إليها', stat3s: 'شبكة مشترين عالمية',
+    stat4n: '١٠٠٪', stat4l: 'رضا العملاء', stat4s: 'توريد مرتكز على الجودة',
     productsLabel: '◆ منتجاتنا ◆', productsTitle: 'ماذا نصدر',
     spicesLabel: 'التوابل', spicesTitle: 'توابل كيرالا',
     spicesDesc: 'هيل وفلفل وقرنفل وزنجبيل وكركم عالي الجودة للتصدير.',
@@ -98,18 +167,78 @@ const translations = {
     catalogLabel: '◆ كتالوج المنتجات ◆', catalogTitle: 'تحميل كتالوج التصدير',
     catalogDesc: 'احصل على قائمة منتجاتنا الكاملة مع تفاصيل التغليف والحد الأدنى للطلب ومواصفات التصدير بصيغة PDF.',
     catalogBtn: 'تحميل الكتالوج (PDF)',
+    stickyText: 'احصل على سعر التصدير اليوم →',
+    stickyBtn: 'واتساب الآن',
+    waChatTitle: 'كيرالا سبايس وكوفي',
+    waChatSub: 'يرد عادةً على الفور',
+    waChatMsg: 'مرحباً! كيف يمكننا مساعدتك؟ أرسل لنا استفسارك وسنرد قريباً.',
+    waChatSend: 'إرسال',
+    waChatPlaceholder: 'اكتب رسالة...',
+    whyLabel: '◆ لماذا تختارنا ◆',
+    whyTitle: 'نحن مختلفون',
+    whyFeature: 'الميزة',
+    whyUs: 'كيرالا سبايس وكوفي',
+    whyThem: 'تجار آخرون',
+    why1f: 'المصدر', why1us: 'مباشر من المزرعة', why1them: 'وسطاء متعددون',
+    why2f: 'ضبط الجودة', why2us: 'تدريج يدوي، درجة تصدير', why2them: 'درجات مختلطة',
+    why3f: 'التوثيق', why3us: 'وثائق تصدير كاملة', why3them: 'غالباً غير مكتملة',
+    why4f: 'الشهادات', why4us: 'مسجل في APEDA وFSSAI', why4them: 'يتفاوت',
+    why5f: 'الحد الأدنى للطلب', why5us: 'مناسب للمشتري', why5them: 'حدود دنيا عالية',
+    why6f: 'التواصل', why6us: 'واتساب وبريد مباشر', why6them: 'رد بطيء',
+    certLabel: '◆ الشهادات والتسجيلات ◆',
+    certTitle: 'موثوق ومعتمد',
+    cert1name: 'APEDA', cert1desc: 'هيئة تطوير تصدير المنتجات الزراعية والغذائية المصنعة',
+    cert2name: 'FSSAI', cert2desc: 'هيئة سلامة الغذاء ومعاييره في الهند — مرخص ومتوافق',
+    cert3name: 'جاهز للتصدير', cert3desc: 'وثائق صحية نباتية وشهادة المنشأ والشحن متوفرة كاملة',
+    cert4name: 'مجلس التوابل', cert4desc: 'مسجل في مجلس التوابل الهندي لضمان الجودة',
+    marketsLabel: '◆ أسواقنا التصديرية ◆',
+    marketsTitle: 'الدول التي نصدر إليها',
+    packLabel: '◆ التغليف ◆',
+    packTitle: 'خيارات تغليف التصدير',
+    pack1title: 'أكياس الجوت',
+    pack1desc: 'أكياس جوت قابلة للتنفس مثالية للتوابل — صديقة للبيئة ومطابقة لمعايير التصدير.',
+    pack1f1: 'خيارات ٢٥ و٥٠ كجم', pack1f2: 'قابلة للتنفس، بطانة مقاومة للرطوبة', pack1f3: 'بطاقات مخصصة متاحة',
+    pack2title: 'أكياس GrainPro',
+    pack2desc: 'أكياس مختومة هوائياً مثالية لحبوب القهوة الخضراء — تحافظ على النضارة للرحلات الطويلة.',
+    pack2f1: 'ختم هوائي محكم', pack2f2: 'تمنع الرطوبة والحشرات', pack2f3: 'مفضلة لدى محامص القهوة المتخصصة',
+    pack3title: 'أكياس PP المنسوجة',
+    pack3desc: 'أكياس بولي بروبيلين منسوجة متينة للتوابل السائبة والكركم — قوية وفعالة من حيث التكلفة.',
+    pack3f1: 'أكياس ٢٥ و٥٠ كجم وجامبو طن', pack3f2: 'مقاوم للأشعة فوق البنفسجية والتمزق', pack3f3: 'طباعة مخصصة على الكيس',
+    calLabel: '◆ تقويم الحصاد ◆',
+    calTitle: 'التوفر الموسمي',
+    calDesc: 'خطط مشترياتك حول أشهر ذروة الحصاد للحصول على أفضل جودة وسعر',
+    calProduct: 'المنتج',
+    calLegGrow: 'نمو', calLegDev: 'تطور', calLegHarv: 'حصاد', calLegPeak: 'موسم الذروة',
+    faqLabel: '◆ الأسئلة الشائعة ◆',
+    faqTitle: 'أسئلة شائعة',
+    faq1q: 'ما هو الحد الأدنى لكمية الطلب؟',
+    faq1a: 'يختلف الحد الأدنى حسب المنتج: التوابل من ١٠٠ كجم، حبوب القهوة من ٢٠٠ كجم. نحن مرنون للمشترين الجدد.',
+    faq2q: 'ما شروط الدفع المتاحة؟',
+    faq2a: 'نقبل التحويل البنكي (T/T) وخطاب الاعتماد (LC) والدفع المسبق للمشترين الجدد. الشروط قابلة للتفاوض.',
+    faq3q: 'كم تستغرق الشحنة؟',
+    faq3a: 'الإمارات والشرق الأوسط: ٧–١٢ يوماً. أوروبا: ١٨–٢٥ يوماً. أمريكا: ٢٠–٣٠ يوماً.',
+    faq4q: 'ما وثائق التصدير التي تقدمونها؟',
+    faq4a: 'نوفر: الفاتورة التجارية، قائمة التعبئة، شهادة المنشأ، الشهادة الصحية النباتية، بوليصة الشحن، وشهادات FSSAI وAPEDA.',
+    faq5q: 'هل تقدمون تغليفاً مخصصاً أو علامة خاصة؟',
+    faq5a: 'نعم! نقدم طباعة مخصصة على الأكياس وتغليف العلامة الخاصة. تواصل معنا للتفاصيل.',
+    faq6q: 'ما شروط الشحن الدولية المدعومة؟',
+    faq6a: 'ندعم FOB (كوتشي/تشيناي) وCIF وCFR لجميع الموانئ العالمية الرئيسية.',
     pHeroLabel: '◆ منتجاتنا ◆', pHeroTitle: 'ماذا نصدر', pHeroSub: 'أفضل منتجات كيرالا للمشترين العالميين',
     filterAll: 'الكل', filterSpice: 'التوابل', filterCoffee: 'حبوب القهوة',
     getQuote: 'احصل على عرض سعر →',
+    p1name: 'هيل أخضر',       p1pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ١٠٠ كجم',
+    p2name: 'فلفل أسود',       p2pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ١٠٠ كجم',
+    p3name: 'قرنفل',           p3pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ٥٠ كجم',
+    p4name: 'زنجبيل جاف',      p4pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ١٠٠ كجم',
+    p5name: 'أصابع الكركم',    p5pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ١٠٠ كجم',
+    p6name: 'قهوة روبوستا',    p6pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ٢٠٠ كجم',
+    p7name: 'قهوة أرابيكا',    p7pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ٢٠٠ كجم',
+    p8name: 'حبوب قهوة خضراء', p8pack: 'أكياس ٢٥/٥٠ كجم · الحد الأدنى: ٢٠٠ كجم',
     aHeroLabel: 'من نحن', aHeroTitle: 'أفضل ما في كيرالا، يصل إلى العالم', aHeroSub: 'جذورنا في الجودة والتراث',
     ourStoryLabel: 'قصتنا',
     ourStoryTitle: 'توريد مباشر من مزارعي ومزارع كيرالا',
-    ourStoryP1: 'تزود كيرالا سبايس للتصدير المشترين الدوليين بالجملة بتوابل وحبوب قهوة مختارة بعناية من كيرالا. عملنا مبني على الجودة الثابتة والتواصل التجاري الشفاف والتغليف بمعايير التصدير.',
+    ourStoryP1: 'تزود كيرالا سبايس للتصدير المشترين الدوليين بالجملة بتوابل وحبوب قهوة مختارة بعناية من كيرالا.',
     ourStoryP2: 'من الهيل والفلفل إلى قهوة روبوستا وأرابيكا، كل شحنة تُعامل باهتمام بالتدريج والتعبئة والتوثيق.',
-    stat1l: 'سنوات من الخبرة', stat1s: 'معرفة في التعامل مع التصدير',
-    stat2l: 'عملاء سعداء', stat2s: 'علاقات تجارية متكررة',
-    stat3l: 'دولة صدرنا إليها', stat3s: 'شبكة مشترين عالمية',
-    stat4l: 'تركيز على الجودة', stat4s: 'بضائع مختارة بعناية',
     valuesLabel: '◆ قيمنا ◆', valuesTitle: 'كيف نعمل',
     v1t: 'الجودة', v1d: 'توريد وتدريج وتعبئة دقيقة للتصدير.',
     v2t: 'الشفافية', v2d: 'حد أدنى واضح للطلب وشروط تسعير وتوثيق.',
@@ -132,10 +261,29 @@ function setLang(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   const t = translations[lang];
+
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.getAttribute('data-key');
-    if (t[key] !== undefined) el.textContent = t[key];
+    if (t[key] === undefined) return;
+    // If element has child SVGs, preserve them
+    const svgs = el.querySelectorAll('svg');
+    if (svgs.length > 0) {
+      // Find first text node and replace it
+      for (const node of el.childNodes) {
+        if (node.nodeType === 3) { node.textContent = t[key]; return; }
+      }
+      el.appendChild(document.createTextNode(t[key]));
+    } else {
+      el.textContent = t[key];
+    }
   });
+
+  // Handle input placeholders
+  document.querySelectorAll('[data-placeholder-key]').forEach(el => {
+    const key = el.getAttribute('data-placeholder-key');
+    if (t[key] !== undefined) el.placeholder = t[key];
+  });
+
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('bg-maroon', 'text-white'));
   const btn = document.getElementById('btn-' + lang);
   if (btn) btn.classList.add('bg-maroon', 'text-white');

@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kerala Spice & Coffee Exports | Premium Indian Spices & Coffee Beans</title>
   <meta name="description" content="Premium Indian spices and coffee beans exported from Kerala. Bulk supply of cardamom, pepper, cloves, ginger, turmeric, and coffee beans for international buyers.">
+  <!-- OG Tags -->
+  <meta property="og:title" content="Kerala Spice & Coffee Exports | Premium Indian Spices & Coffee Beans">
+  <meta property="og:description" content="Direct-from-source Kerala spices and plantation coffee for international bulk buyers. Cardamom, pepper, cloves, ginger, turmeric, coffee beans.">
+  <meta property="og:image" content="https://keralaspiceexports.com/assets/images/hero-bg.png">
+  <meta property="og:url" content="https://keralaspiceexports.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kerala Spice & Coffee Exports",
+    "url": "https://keralaspiceexports.com",
+    "logo": "https://keralaspiceexports.com/assets/logo.svg",
+    "description": "Premium Kerala spices and plantation coffee beans for international bulk buyers.",
+    "address": { "@type": "PostalAddress", "addressRegion": "Kerala", "addressCountry": "IN" },
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+91XXXXXXXXXX", "contactType": "sales" },
+    "sameAs": []
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -35,6 +56,9 @@
     }
   </script>
   <style>
+    #sticky-bar { transition: transform 0.3s; }
+    #quote-popup { transition: opacity 0.2s; }
+    #wa-chat-box { transition: opacity 0.2s, transform 0.2s; }
     html { scroll-behavior: smooth; }
     body { background: #F5EFE4; color: #4A3520; font-family: "DM Sans", sans-serif; }
     .hero-scene {
@@ -54,6 +78,13 @@
         linear-gradient(180deg, rgba(255,255,255,0.18), rgba(245,239,228,0.86));
     }
     .nav-link.active { border-bottom-color: #7B1F1F; color: #7B1F1F; }
+    [dir="rtl"] { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
+    [dir="rtl"] .font-script { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
+    [dir="rtl"] table { direction: rtl; }
+    [dir="rtl"] .text-left { text-align: right; }
+    [dir="rtl"] .items-end { align-items: flex-start; }
+    [dir="rtl"] #wa-chat-box { right: auto; left: 0; }
+    [dir="rtl"] .rounded-tl-none { border-top-left-radius: 0.75rem; border-top-right-radius: 0; }
     .product-scroll { scroll-behavior: smooth; scrollbar-width: none; }
     .product-scroll::-webkit-scrollbar { display: none; }
     @media (min-width: 640px) {
@@ -64,6 +95,36 @@
   </style>
 </head>
 <body class="font-body overflow-x-hidden">
+
+  <!-- Sticky Price Bar -->
+  <div id="sticky-bar" class="fixed bottom-0 left-0 right-0 z-40 bg-maroon text-white text-center py-2.5 px-4 text-sm font-bold">
+    <span class="inline-flex items-center gap-2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C7 7 5 10 6 14c1 5 6 7 6 7s5-2 6-7c1-4-1-7-6-11Z" fill="currentColor"/></svg> Get Today's Export Price →</span>
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20know%20today%27s%20export%20price" target="_blank" class="ml-3 bg-white text-maroon px-4 py-1 rounded-full text-xs font-black hover:bg-gold transition-colors" data-key="stickyBtn">WhatsApp Now</a>
+    <button onclick="document.getElementById('sticky-bar').style.display='none'" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+
+  <!-- WhatsApp Floating Chat Widget -->
+  <div class="fixed bottom-20 right-6 z-50 flex flex-col items-end gap-3">
+    <div id="wa-chat-box" class="hidden opacity-0 bg-white rounded-2xl shadow-soft border border-gold/20 w-72 overflow-hidden">
+      <div class="bg-[#075E54] text-white px-4 py-3 flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.8-3.3-2.7-3.4-2.9-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4ZM12 2a10 10 0 0 0-8.5 15.3L2.3 22l4.8-1.3A10 10 0 1 0 12 2Z"/></svg>
+        </div>
+        <div><p class="font-bold text-sm">Kerala Spice & Coffee</p><p class="text-xs text-white/75" data-key="waChatSub">Typically replies instantly</p></div>
+        <button onclick="toggleWAChat()" class="ml-auto text-white/70 hover:text-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="bg-[#ECE5DD] p-4">
+        <div class="bg-white rounded-xl rounded-tl-none px-3 py-2 text-sm text-ink shadow-sm max-w-[85%]"><span class="inline-flex items-center gap-1"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M8 9h8M8 13h5M5 3h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H7l-4 3V5a2 2 0 0 1 2-2Z" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Hi! How can we help you? Send us your inquiry and we'll reply shortly.</span></div>
+      </div>
+      <div class="p-3 bg-white flex gap-2">
+        <input id="wa-msg" class="flex-1 border border-gold/40 rounded-full px-4 py-2 text-sm outline-none" data-placeholder-key="waChatPlaceholder" placeholder="Type a message..." value="Hi, I want to inquire about your spices">
+        <a id="wa-send" href="#" target="_blank" class="bg-[#25D366] text-white px-4 py-2 rounded-full text-sm font-bold" data-key="waChatSend">Send</a>
+      </div>
+    </div>
+    <button onclick="toggleWAChat()" class="w-14 h-14 bg-[#25D366] text-white rounded-full shadow-soft flex items-center justify-center">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.8-3.3-2.7-3.4-2.9-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4ZM12 2a10 10 0 0 0-8.5 15.3L2.3 22l4.8-1.3A10 10 0 1 0 12 2Z"/></svg>
+    </button>
+  </div>
   <header id="site-header" class="fixed top-3 left-0 right-0 z-50 px-4 sm:px-6 transition-shadow duration-300">
     <div class="max-w-7xl mx-auto bg-parchment/95 backdrop-blur rounded-[2rem] border border-gold/35 shadow-card px-4 sm:px-6">
       <div class="relative grid grid-cols-[1fr_auto_1fr] items-center gap-3 py-3 border-b border-gold/35">
@@ -153,17 +214,17 @@
         <div class="relative">
           <div class="rounded-[2rem] overflow-hidden shadow-soft bg-white/50 border border-white/70 p-4">
             <div class="grid grid-cols-12 gap-3 h-[430px] sm:h-[520px]">
-              <img src="assets/images/cardamom.png" alt="Green cardamom bowl" class="col-span-7 row-span-2 w-full h-full object-cover rounded-[1.5rem]">
-              <img src="assets/images/pepper.png" alt="Black pepper bowl" class="col-span-5 w-full h-full object-cover rounded-[1.5rem]">
-              <img src="assets/images/cloves.png" alt="Whole cloves" class="col-span-5 w-full h-full object-cover rounded-[1.5rem]">
-              <img src="assets/images/turmeric.png" alt="Turmeric fingers" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
-              <img src="assets/images/robusta.png" alt="Robusta coffee beans" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
-              <img src="assets/images/ginge.png" alt="Ginger root" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/cardamom.png" alt="Green cardamom bowl" loading="lazy" class="col-span-7 row-span-2 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/pepper.png" alt="Black pepper bowl" loading="lazy" class="col-span-5 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/cloves.png" alt="Whole cloves" loading="lazy" class="col-span-5 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/turmeric.png" alt="Turmeric fingers" loading="lazy" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/robusta.png" alt="Robusta coffee beans" loading="lazy" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
+              <img src="assets/images/ginge.png" alt="Ginger root" loading="lazy" class="col-span-4 w-full h-full object-cover rounded-[1.5rem]">
             </div>
           </div>
           <div class="absolute bottom-5 right-5 flex gap-3">
-            <button class="h-11 w-11 rounded-full bg-white/95 border border-gold text-ink shadow-card" aria-label="Previous hero image">‹</button>
-            <button class="h-11 w-11 rounded-full bg-maroon text-white shadow-card" aria-label="Next hero image">›</button>
+            <button class="h-11 w-11 rounded-full bg-white/95 border border-gold text-ink shadow-card flex items-center justify-center" aria-label="Previous hero image"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="h-11 w-11 rounded-full bg-maroon text-white shadow-card flex items-center justify-center" aria-label="Next hero image"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           </div>
         </div>
       </div>
@@ -189,14 +250,14 @@
           <a href="about.html" class="inline-flex border border-maroon text-maroon font-bold px-6 py-3 rounded-full" data-key="aboutLink">Know More About Us →</a>
         </div>
         <div class="grid sm:grid-cols-2 gap-5">
-          <figure class="relative sm:translate-y-8 rounded-3xl overflow-hidden shadow-card border-4 border-white"><img src="assets/images/about-farm.png" alt="Kerala plantation aerial view" class="h-80 w-full object-cover"><figcaption class="absolute left-4 bottom-4 bg-white/90 text-ink font-bold px-4 py-2 rounded-full text-sm">From Kerala Plantations</figcaption></figure>
-          <figure class="relative rounded-3xl overflow-hidden shadow-card border-4 border-white"><img src="assets/images/cardamom.png" alt="Premium cardamom close-up" class="h-80 w-full object-cover"><figcaption class="absolute left-4 bottom-4 bg-white/90 text-ink font-bold px-4 py-2 rounded-full text-sm">Carefully Selected Premium Quality</figcaption></figure>
+          <figure class="relative sm:translate-y-8 rounded-3xl overflow-hidden shadow-card border-4 border-white"><img src="assets/images/about-farm.png" alt="Kerala plantation aerial view" loading="lazy" class="h-80 w-full object-cover"><figcaption class="absolute left-4 bottom-4 bg-white/90 text-ink font-bold px-4 py-2 rounded-full text-sm">From Kerala Plantations</figcaption></figure>
+          <figure class="relative rounded-3xl overflow-hidden shadow-card border-4 border-white"><img src="assets/images/cardamom.png" alt="Premium cardamom close-up" loading="lazy" class="h-80 w-full object-cover"><figcaption class="absolute left-4 bottom-4 bg-white/90 text-ink font-bold px-4 py-2 rounded-full text-sm">Carefully Selected Premium Quality</figcaption></figure>
         </div>
         <div class="grid gap-5">
-          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">10+</p><p class="font-bold">Years of Experience</p><p class="text-sm text-mutedBrown">Export handling knowledge</p></div>
-          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">500+</p><p class="font-bold">Happy Clients</p><p class="text-sm text-mutedBrown">Across trade channels</p></div>
-          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">50+</p><p class="font-bold">Countries Exported</p><p class="text-sm text-mutedBrown">Global buyer network</p></div>
-          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">100%</p><p class="font-bold">Customer Satisfaction</p><p class="text-sm text-mutedBrown">Quality focused supply</p></div>
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">10+</p><p class="font-bold" data-key="stat1l">Years of Experience</p><p class="text-sm text-mutedBrown" data-key="stat1s">Export handling knowledge</p></div>
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">500+</p><p class="font-bold" data-key="stat2l">Happy Clients</p><p class="text-sm text-mutedBrown" data-key="stat2s">Across trade channels</p></div>
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">50+</p><p class="font-bold" data-key="stat3l">Countries Exported</p><p class="text-sm text-mutedBrown" data-key="stat3s">Global buyer network</p></div>
+          <div class="bg-white/65 border border-gold/25 rounded-2xl p-5"><p class="font-display text-4xl font-black text-gold">100%</p><p class="font-bold" data-key="stat4l">Customer Satisfaction</p><p class="text-sm text-mutedBrown" data-key="stat4s">Quality focused supply</p></div>
         </div>
       </div>
     </section>
@@ -210,11 +271,11 @@
         <div class="grid lg:grid-cols-2 gap-8">
           <article class="relative overflow-hidden bg-parchment border border-gold/35 rounded-[2rem] p-8 shadow-card flex flex-col sm:block">
             <div class="export-card-div relative z-10 max-w-[58%]"><p class="text-maroon tracking-[0.18em] font-black mb-3" data-key="spicesLabel">SPICES</p><h3 class="font-display text-2xl sm:text-3xl font-black mb-3" data-key="spicesTitle">Kerala Spices</h3><p class="text-mutedBrown mb-6 text-sm" data-key="spicesDesc">Aromatic export-grade cardamom, pepper, cloves, ginger, and turmeric.</p><a href="products.html" class="inline-flex border border-maroon text-maroon font-bold px-4 py-2.5 text-sm rounded-full" data-key="spicesLink">View All Spices →</a></div>
-            <img src="assets/images/spice-flatlay.png" alt="Spice flatlay" class="export-card-img mt-6 mx-auto w-48 h-48 sm:mt-0 sm:mx-0 sm:absolute sm:bottom-0 sm:w-60 sm:h-60 object-cover rounded-full border-8 border-white shadow-card">
+            <img src="assets/images/spice-flatlay.png" alt="Spice flatlay" loading="lazy" class="export-card-img mt-6 mx-auto w-48 h-48 sm:mt-0 sm:mx-0 sm:absolute sm:bottom-0 sm:w-60 sm:h-60 object-cover rounded-full border-8 border-white shadow-card">
           </article>
           <article class="relative overflow-hidden bg-parchment border border-gold/35 rounded-[2rem] p-8 shadow-card flex flex-col sm:block">
             <div class="export-card-div relative z-10 max-w-[58%]"><p class="text-maroon tracking-[0.18em] font-black mb-3" data-key="coffeeLabel">COFFEE BEANS</p><h3 class="font-display text-2xl sm:text-3xl font-black mb-3" data-key="coffeeTitle">Plantation Coffee</h3><p class="text-mutedBrown mb-6 text-sm" data-key="coffeeDesc">Robusta, Arabica, and green coffee beans for roasters and importers.</p><a href="products.html" class="inline-flex border border-maroon text-maroon font-bold px-4 py-2.5 text-sm rounded-full" data-key="coffeeLink">View All Coffee Beans →</a></div>
-            <img src="assets/images/robusta.png" alt="Robusta coffee beans" class="export-card-img mt-6 mx-auto w-48 h-48 sm:mt-0 sm:mx-0 sm:absolute sm:bottom-0 sm:w-60 sm:h-60 object-cover rounded-full border-8 border-white shadow-card">
+            <img src="assets/images/robusta.png" alt="Robusta coffee beans" loading="lazy" class="export-card-img mt-6 mx-auto w-48 h-48 sm:mt-0 sm:mx-0 sm:absolute sm:bottom-0 sm:w-60 sm:h-60 object-cover rounded-full border-8 border-white shadow-card">
           </article>
         </div>
       </div>
@@ -236,17 +297,213 @@
           <h2 class="font-display text-5xl font-black mt-3" data-key="favTitle">Buyer Favorites</h2>
         </div>
         <div class="relative">
-          <button data-carousel="prev" class="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-11 w-11 items-center justify-center rounded-full bg-white border border-gold shadow-card">‹</button>
+          <button data-carousel="prev" class="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-11 w-11 items-center justify-center rounded-full bg-white border border-gold shadow-card"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           <div id="product-carousel" class="product-scroll flex gap-5 overflow-x-auto snap-x pb-3">
-            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/cardamom.png" alt="Green Cardamom" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Green Cardamom</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
-            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/pepper.png" alt="Black Pepper" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Black Pepper</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
-            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/cloves.png" alt="Cloves" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Cloves</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
-            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/ginge.png" alt="Dry Ginger" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Dry Ginger</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
-            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/turmeric.png" alt="Turmeric Fingers" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Turmeric Fingers</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/cardamom.png" alt="Green Cardamom" loading="lazy" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Green Cardamom</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/pepper.png" alt="Black Pepper" loading="lazy" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Black Pepper</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/cloves.png" alt="Cloves" loading="lazy" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Cloves</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/ginge.png" alt="Dry Ginger" loading="lazy" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Dry Ginger</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
+            <article class="snap-start shrink-0 w-60 bg-white rounded-2xl p-6 shadow-card text-center"><img src="assets/images/turmeric.png" alt="Turmeric Fingers" loading="lazy" class="h-32 w-32 rounded-full object-cover mx-auto mb-5 border-4 border-parchment"><h3 class="font-display text-xl font-black">Turmeric Fingers</h3><p class="text-sm text-mutedBrown mt-2">25kg / 50kg Bags</p><p class="text-sm text-mutedBrown">MOQ: 100kg</p></article>
           </div>
-          <button data-carousel="next" class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-11 w-11 items-center justify-center rounded-full bg-maroon text-white shadow-card">›</button>
+          <button data-carousel="next" class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-11 w-11 items-center justify-center rounded-full bg-maroon text-white shadow-card"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         </div>
         <div class="text-center mt-10"><a href="products.html" class="inline-flex border border-maroon text-maroon font-bold px-7 py-3 rounded-full" data-key="viewAll">View All Products →</a></div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-[#F1E7D8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-gold font-black text-xs tracking-[0.2em] uppercase" data-key="whyLabel">◆ Why Choose Us ◆</p>
+          <h2 class="font-display text-5xl font-black mt-3" data-key="whyTitle">We're Different</h2>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[600px] bg-white rounded-2xl overflow-hidden shadow-card text-sm">
+            <thead>
+              <tr class="bg-forest text-white">
+                <th class="text-left px-6 py-4 font-bold" data-key="whyFeature">Feature</th>
+                <th class="px-6 py-4 font-bold text-gold">Kerala Spice & Coffee</th>
+                <th class="px-6 py-4 font-bold text-white/60" data-key="whyThem">Typical Traders</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-gold/15"><td class="px-6 py-4 font-bold text-ink" data-key="why1f">Source</td><td class="px-6 py-4 text-center text-forest font-bold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Direct from farm</td><td class="px-6 py-4 text-center text-mutedBrown" data-key="why1them">Multiple middlemen</td></tr>
+              <tr class="border-t border-gold/15 bg-parchment/50"><td class="px-6 py-4 font-bold text-ink" data-key="why2f">Quality Control</td><td class="px-6 py-4 text-center text-forest font-bold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Hand-graded, export-grade</td><td class="px-6 py-4 text-center text-mutedBrown" data-key="why2them">Mixed grades</td></tr>
+              <tr class="border-t border-gold/15"><td class="px-6 py-4 font-bold text-ink" data-key="why3f">Documentation</td><td class="px-6 py-4 text-center text-forest font-bold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Full export docs provided</td><td class="px-6 py-4 text-center text-mutedBrown" data-key="why3them">Often incomplete</td></tr>
+              <tr class="border-t border-gold/15 bg-parchment/50"><td class="px-6 py-4 font-bold text-ink" data-key="why4f">Certifications</td><td class="px-6 py-4 text-center text-forest font-bold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> APEDA, FSSAI registered</td><td class="px-6 py-4 text-center text-mutedBrown" data-key="why4them">Varies</td></tr>
+              <tr class="border-t border-gold/15"><td class="px-6 py-4 font-bold text-ink" data-key="why5f">MOQ</td><td class="px-6 py-4 text-center text-forest font-bold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Buyer-friendly MOQ</td><td class="px-6 py-4 text-center text-mutedBrown" data-key="why5them">High minimums</td></tr>
+              <tr class="border-t border-gold/15 bg-parchment/50"><td class="px-6 py-4 font-bold text-ink" data-key="why6f">Communication</td><td class="px-6 py-4 text-center text-forest font-bold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Direct WhatsApp &amp; Email</td><td class="px-6 py-4 text-center text-mutedBrown" data-key="why6them">Slow response</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <p class="text-gold font-black text-xs tracking-[0.2em] uppercase mb-4">◆ Certifications & Registrations ◆</p>
+        <h2 class="font-display text-4xl font-black mb-10">Trusted & Verified</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+          <div class="bg-white border border-gold/30 rounded-2xl px-8 py-6 shadow-card flex flex-col items-center gap-3 min-w-[160px]">
+            <div class="w-16 h-16 bg-forest rounded-full flex items-center justify-center">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7l-9-5Z" fill="#C9A96E"/><path d="m9 12 2 2 4-4" stroke="#2C3A1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="font-black text-ink text-lg" data-key="cert1name">APEDA</p>
+            <p class="text-xs text-mutedBrown text-center">Agricultural & Processed Food Products Export Development Authority</p>
+          </div>
+          <div class="bg-white border border-gold/30 rounded-2xl px-8 py-6 shadow-card flex flex-col items-center gap-3 min-w-[160px]">
+            <div class="w-16 h-16 bg-maroon rounded-full flex items-center justify-center">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C9A96E" stroke-width="2"/><path d="m9 12 2 2 4-4" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="font-black text-ink text-lg" data-key="cert2name">FSSAI</p>
+            <p class="text-xs text-mutedBrown text-center">Food Safety & Standards Authority of India — Licensed & Compliant</p>
+          </div>
+          <div class="bg-white border border-gold/30 rounded-2xl px-8 py-6 shadow-card flex flex-col items-center gap-3 min-w-[160px]">
+            <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="m4 8 8-4 8 4-8 4-8-4ZM4 8v8l8 4 8-4V8" stroke="#2C3A1E" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="font-black text-ink text-lg" data-key="cert3name">Export Ready</p>
+            <p class="text-xs text-mutedBrown text-center">Full phytosanitary, COO & shipping documentation provided</p>
+          </div>
+          <div class="bg-white border border-gold/30 rounded-2xl px-8 py-6 shadow-card flex flex-col items-center gap-3 min-w-[160px]">
+            <div class="w-16 h-16 bg-forest rounded-full flex items-center justify-center">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 3C7 7 5 10 6 14c1 5 6 7 6 7s5-2 6-7c1-4-1-7-6-11Z" fill="#C9A96E"/></svg>
+            </div>
+            <p class="font-black text-ink text-lg" data-key="cert4name">Spices Board</p>
+            <p class="text-xs text-mutedBrown text-center" data-key="cert4desc">Registered with Spices Board of India for quality assurance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Markets -->
+    <section class="py-16 bg-forest text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <p class="text-gold font-black text-xs tracking-[0.2em] uppercase mb-4" data-key="marketsLabel">◆ Our Export Markets ◆</p>
+        <h2 class="font-display text-4xl font-black mb-10" data-key="marketsTitle">Countries We Export To</h2>
+        <div class="flex flex-wrap justify-center gap-5">
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="26" rx="2" fill="#00732F"/><rect width="13" height="26" fill="#CE1126"/><rect x="13" width="27" height="8.67" fill="#00732F"/><rect x="13" y="8.67" width="27" height="8.67" fill="white"/><rect x="13" y="17.33" width="27" height="8.67" fill="#000"/></svg><p class="font-bold text-sm">UAE</p></div>
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="26" rx="2" fill="#006C35"/><rect width="10" height="26" fill="white"/><rect x="10" width="3" height="26" fill="#000"/><rect x="30" width="10" height="26" fill="#CE1126"/></svg><p class="font-bold text-sm">Saudi Arabia</p></div>
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="26" rx="2" fill="#012169"/><path d="M0 0l40 26M40 0 0 26" stroke="white" stroke-width="5"/><path d="M0 0l40 26M40 0 0 26" stroke="#C8102E" stroke-width="3"/><path d="M20 0v26M0 13h40" stroke="white" stroke-width="8"/><path d="M20 0v26M0 13h40" stroke="#C8102E" stroke-width="5"/></svg><p class="font-bold text-sm">United Kingdom</p></div>
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="8.67" fill="#000"/><rect y="8.67" width="40" height="8.67" fill="#DD0000"/><rect y="17.33" width="40" height="8.67" fill="#FFCE00"/><rect width="40" height="26" rx="2" fill="none" stroke="#ccc" stroke-width="0.5"/></svg><p class="font-bold text-sm">Germany</p></div>
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="26" rx="2" fill="#B22234"/><rect y="2" width="40" height="2" fill="white"/><rect y="6" width="40" height="2" fill="white"/><rect y="10" width="40" height="2" fill="white"/><rect y="14" width="40" height="2" fill="white"/><rect y="18" width="40" height="2" fill="white"/><rect y="22" width="40" height="2" fill="white"/><rect width="17" height="14" fill="#3C3B6E"/></svg><p class="font-bold text-sm">USA</p></div>
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="26" rx="2" fill="#8D1B3D"/><rect width="14" height="26" fill="white"/><rect width="7" height="26" fill="#8D1B3D"/></svg><p class="font-bold text-sm">Qatar</p></div>
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="26" rx="2" fill="white"/><rect width="40" height="8.67" fill="#EF3340"/><rect y="17.33" width="40" height="8.67" fill="#EF3340"/><circle cx="20" cy="13" r="5" stroke="#EF3340" stroke-width="1.5" fill="white"/><path d="M20 8v10M15 13h10" stroke="#EF3340" stroke-width="1.5"/></svg><p class="font-bold text-sm">Singapore</p></div>
+          <div class="flex flex-col items-center gap-2"><svg width="40" height="26" viewBox="0 0 40 26" fill="none"><rect width="40" height="26" rx="2" fill="#00008B"/><path d="M0 0l40 26M40 0 0 26" stroke="white" stroke-width="4"/><path d="M0 0l40 26M40 0 0 26" stroke="#FF0000" stroke-width="2"/><path d="M20 0v26M0 13h40" stroke="white" stroke-width="7"/><path d="M20 0v26M0 13h40" stroke="#FF0000" stroke-width="4"/></svg><p class="font-bold text-sm">Australia</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packaging Showcase -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-gold font-black text-xs tracking-[0.2em] uppercase" data-key="packLabel">◆ Packaging ◆</p>
+          <h2 class="font-display text-5xl font-black mt-3" data-key="packTitle">Export Packaging Options</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl shadow-card p-7 border border-gold/20">
+            <div class="w-12 h-12 bg-parchment rounded-xl flex items-center justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 6h16v14H4zM8 6V4h8v2" stroke="#7B1F1F" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="font-display text-2xl font-black mb-2" data-key="pack1title">Jute Bags</h3>
+            <p class="text-mutedBrown text-sm mb-4" data-key="pack1desc">Traditional breathable jute bags ideal for spices — eco-friendly and export standard.</p>
+            <ul class="text-sm space-y-1 text-ink">
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 25kg &amp; 50kg options</li>
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Breathable, moisture-resistant liner</li>
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom labelling available</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-2xl shadow-card p-7 border border-gold/20">
+            <div class="w-12 h-12 bg-parchment rounded-xl flex items-center justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="m4 8 8-4 8 4-8 4-8-4ZM4 8v8l8 4 8-4V8" stroke="#2C3A1E" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="font-display text-2xl font-black mb-2" data-key="pack2title">GrainPro Bags</h3>
+            <p class="text-mutedBrown text-sm mb-4" data-key="pack2desc">Hermetically sealed bags perfect for green coffee beans — preserves freshness for long voyages.</p>
+            <ul class="text-sm space-y-1 text-ink">
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Airtight hermetic seal</li>
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Prevents moisture &amp; pests</li>
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Preferred by specialty roasters</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-2xl shadow-card p-7 border border-gold/20">
+            <div class="w-12 h-12 bg-parchment rounded-xl flex items-center justify-center mb-4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#C9A96E" stroke-width="1.8"/><path d="M3 10h18" stroke="#C9A96E" stroke-width="1.8"/></svg>
+            </div>
+            <h3 class="font-display text-2xl font-black mb-2" data-key="pack3title">PP Woven Bags</h3>
+            <p class="text-mutedBrown text-sm mb-4" data-key="pack3desc">Durable polypropylene woven sacks for bulk spices and turmeric — strong and cost-effective.</p>
+            <ul class="text-sm space-y-1 text-ink">
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 25kg, 50kg &amp; 1-ton jumbo bags</li>
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> UV &amp; tear resistant</li>
+              <li class="flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2C3A1E"/><path d="m8 12 3 3 5-5" stroke="#C9A96E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom printing on bag</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Availability Calendar -->
+    <section class="py-16 bg-[#F1E7D8]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-gold font-black text-xs tracking-[0.2em] uppercase" data-key="calLabel">◆ Harvest Calendar ◆</p>
+          <h2 class="font-display text-4xl font-black mt-3" data-key="calTitle">Seasonal Availability</h2>
+          <p class="text-mutedBrown mt-2 text-sm">Plan your purchases around peak harvest months for best quality & pricing</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[700px] text-xs sm:text-sm bg-white rounded-2xl overflow-hidden shadow-card">
+            <thead><tr class="bg-forest text-white"><th class="text-left px-4 py-3 font-bold" data-key="calProduct">Product</th><th class="px-2 py-3 font-bold">Jan</th><th class="px-2 py-3 font-bold">Feb</th><th class="px-2 py-3 font-bold">Mar</th><th class="px-2 py-3 font-bold">Apr</th><th class="px-2 py-3 font-bold">May</th><th class="px-2 py-3 font-bold">Jun</th><th class="px-2 py-3 font-bold">Jul</th><th class="px-2 py-3 font-bold">Aug</th><th class="px-2 py-3 font-bold">Sep</th><th class="px-2 py-3 font-bold">Oct</th><th class="px-2 py-3 font-bold">Nov</th><th class="px-2 py-3 font-bold">Dec</th></tr></thead>
+            <tbody class="text-center">
+              <tr class="border-t border-gold/15"><td class="text-left px-4 py-3 font-bold text-ink">Cardamom</td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3 bg-forest/10"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-forest/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10M9 12c2-1 4-1 6 0" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3"></td></tr>
+              <tr class="border-t border-gold/15 bg-parchment/40"><td class="text-left px-4 py-3 font-bold text-ink">Black Pepper</td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3 bg-forest/10"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-forest/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10M9 12c2-1 4-1 6 0" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td></tr>
+              <tr class="border-t border-gold/15"><td class="text-left px-4 py-3 font-bold text-ink">Cloves</td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3 bg-forest/10"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td></tr>
+              <tr class="border-t border-gold/15 bg-parchment/40"><td class="text-left px-4 py-3 font-bold text-ink">Ginger</td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3 bg-forest/10"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-forest/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10M9 12c2-1 4-1 6 0" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td></tr>
+              <tr class="border-t border-gold/15"><td class="text-left px-4 py-3 font-bold text-ink">Turmeric</td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3 bg-forest/10"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-forest/10"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-forest/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10M9 12c2-1 4-1 6 0" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td></tr>
+              <tr class="border-t border-gold/15 bg-parchment/40"><td class="text-left px-4 py-3 font-bold text-ink">Coffee (Robusta)</td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/30 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3"></td><td class="px-2 py-3 bg-forest/10"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-forest/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10M9 12c2-1 4-1 6 0" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg></td><td class="px-2 py-3 bg-gold/20"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex flex-wrap gap-6 justify-center mt-5 text-sm">
+          <span class="flex items-center gap-1"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg> <span data-key="calLegGrow">Growing</span></span><span class="flex items-center gap-1"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#2C3A1E"/><path d="M12 8v10M9 12c2-1 4-1 6 0" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round"/></svg> <span data-key="calLegDev">Developing</span></span><span class="flex items-center gap-1"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3C8 8 7 12 9 16c1 3 3 5 3 5s2-2 3-5c2-4 1-8-3-13Z" fill="#C9A96E"/></svg> <span data-key="calLegHarv">Harvesting</span></span><span class="flex items-center gap-1 font-bold text-forest"><svg class="mx-auto" width="14" height="14" viewBox="0 0 24 24" fill="#C9A96E"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg> <span data-key="calLegPeak">Peak Season</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-gold font-black text-xs tracking-[0.2em] uppercase" data-key="faqLabel">◆ FAQ ◆</p>
+          <h2 class="font-display text-5xl font-black mt-3" data-key="faqTitle">Common Questions</h2>
+        </div>
+        <div class="space-y-3" id="faq-list">
+          <details class="bg-white rounded-2xl shadow-card border border-gold/15 overflow-hidden group">
+            <summary class="px-6 py-5 font-bold cursor-pointer flex items-center justify-between list-none" data-key="faq1q">What is the Minimum Order Quantity (MOQ)?<span class="text-gold text-xl group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="px-6 pb-5 text-mutedBrown text-sm leading-relaxed" data-key="faq1a">MOQ varies by product: Spices start from 100kg, Coffee Beans from 200kg. We're flexible for first-time buyers — contact us to discuss your requirements.</p>
+          </details>
+          <details class="bg-white rounded-2xl shadow-card border border-gold/15 overflow-hidden group">
+            <summary class="px-6 py-5 font-bold cursor-pointer flex items-center justify-between list-none" data-key="faq2q">What payment terms do you offer?<span class="text-gold text-xl group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="px-6 pb-5 text-mutedBrown text-sm leading-relaxed" data-key="faq2a">We accept T/T (Bank Transfer), Letter of Credit (LC), and advance payment for new buyers. Payment terms are negotiable for established trade partners.</p>
+          </details>
+          <details class="bg-white rounded-2xl shadow-card border border-gold/15 overflow-hidden group">
+            <summary class="px-6 py-5 font-bold cursor-pointer flex items-center justify-between list-none" data-key="faq3q">How long does shipping take?<span class="text-gold text-xl group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="px-6 pb-5 text-mutedBrown text-sm leading-relaxed">UAE & Middle East: 7–12 days. Europe: 18–25 days. USA: 20–30 days. Delivery timelines depend on port and customs clearance at destination.</p>
+          </details>
+          <details class="bg-white rounded-2xl shadow-card border border-gold/15 overflow-hidden group">
+            <summary class="px-6 py-5 font-bold cursor-pointer flex items-center justify-between list-none" data-key="faq4q">What export documents do you provide?<span class="text-gold text-xl group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="px-6 pb-5 text-mutedBrown text-sm leading-relaxed" data-key="faq4a">We provide: Commercial Invoice, Packing List, Certificate of Origin, Phytosanitary Certificate, Bill of Lading, and FSSAI / APEDA certificates as required.</p>
+          </details>
+          <details class="bg-white rounded-2xl shadow-card border border-gold/15 overflow-hidden group">
+            <summary class="px-6 py-5 font-bold cursor-pointer flex items-center justify-between list-none" data-key="faq5q">Do you offer custom packaging or private label?<span class="text-gold text-xl group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="px-6 pb-5 text-mutedBrown text-sm leading-relaxed" data-key="faq5a">Yes! We offer custom bag printing and private label packaging for bulk buyers. Minimum quantities apply — contact us for details.</p>
+          </details>
+          <details class="bg-white rounded-2xl shadow-card border border-gold/15 overflow-hidden group">
+            <summary class="px-6 py-5 font-bold cursor-pointer flex items-center justify-between list-none" data-key="faq6q">Which incoterms do you support?<span class="text-gold text-xl group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="px-6 pb-5 text-mutedBrown text-sm leading-relaxed" data-key="faq6a">We support FOB (Cochin / Chennai), CIF, and CFR to all major global ports. We work with trusted freight forwarders for reliable transit.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
@@ -275,10 +532,8 @@
     <div class="border-t border-white/10 py-5 text-center text-sm text-white/50">© 2025 Kerala Spice & Coffee Exports. All Rights Reserved.</div>
   </footer>
 
-  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-5 py-3 rounded-full shadow-soft">
-    <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-2-.8-3.3-2.7-3.4-2.9-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4ZM12 2a10 10 0 0 0-8.5 15.3L2.3 22l4.8-1.3A10 10 0 1 0 12 2Z"/></svg>
-    <span data-key="whatsappUs">WhatsApp Us</span>
-  </a>
+  <!-- Back to Top -->
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-24 left-6 z-50 w-11 h-11 bg-white border border-gold text-ink rounded-full shadow-card hidden items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 
   <script src="js/i18n.js"></script>
   <script>
@@ -288,11 +543,26 @@
     const iconOpen = document.getElementById("icon-open");
     const iconClose = document.getElementById("icon-close");
     const carousel = document.getElementById("product-carousel");
-    window.addEventListener("scroll", () => header.classList.toggle("shadow-soft", window.scrollY > 12));
+    const btt = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("shadow-soft", window.scrollY > 12);
+      btt.classList.toggle("hidden", window.scrollY < 400);
+      btt.classList.toggle("flex", window.scrollY >= 400);
+    });
     menuToggle.addEventListener("click", () => { mobileMenu.classList.toggle("hidden"); iconOpen.classList.toggle("hidden"); iconClose.classList.toggle("hidden"); });
     document.querySelectorAll("[data-carousel]").forEach(btn => btn.addEventListener("click", () => carousel.scrollBy({ left: (btn.dataset.carousel === "next" ? 1 : -1) * 300, behavior: "smooth" })));
     const currentPage = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".nav-link").forEach(link => { if (link.getAttribute("href") === currentPage) link.classList.add("active"); });
+    function toggleWAChat() {
+      const box = document.getElementById("wa-chat-box");
+      box.classList.toggle("hidden");
+      setTimeout(() => box.classList.toggle("opacity-0", box.classList.contains("hidden")), 10);
+    }
+    document.getElementById("wa-send").addEventListener("click", function(e) {
+      e.preventDefault();
+      const msg = encodeURIComponent(document.getElementById("wa-msg").value || "Hi, I want to inquire about your spices");
+      window.open("https://wa.me/91XXXXXXXXXX?text=" + msg, "_blank");
+    });
   </script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+ High Priority (Most Impact)
+
+Testimonials / Reviews Section — quotes from international buyers (UAE, Europe) builds massive trust for export business
+
+Live WhatsApp Chat Widget — instead of just a button, a floating chat box with a pre-filled message like "Hi, I want to inquire about [product]"
+
+Product Quick Quote Popup — click "Get Quote" on any product card → popup with pre-filled product name ready to send
+
+Sticky Price Request Bar — thin bar at top/bottom saying "Get Today's Export Price →" with WhatsApp link
+
+SEO sitemap.xml + robots.txt — needed for Google to index GitHub Pages site properly
+
+📈 Medium Priority (Grows Business)
+
+Why Choose Us section — comparison table vs competitors (direct from farm, certified, reliable docs, etc.)
+
+Certifications showcase — APEDA, FSSAI logos displayed as trust badges on home page
+
+Target Markets section — flags of UAE, Saudi, UK, Germany, USA showing which countries you export to
+
+FAQ section — common buyer questions (MOQ, payment terms, shipping time, documents)
+
+Packaging showcase — visual cards showing jute bags, GrainPro, PP woven with specs
+
+🌍 SEO & Performance
+
+Convert images to WebP — already discussed, reduces load time by 60–80%
+
+Lazy loading on all images — loading="lazy" attribute
+
+Meta OG tags — so WhatsApp/LinkedIn preview shows company image when link is shared
+
+Google Analytics — track which countries visit, which products get most views
+
+Schema markup — structured data so Google shows rich results
+
+💡 Nice to Have
+
+Seasonal availability calendar — show harvest months per product (buyers plan purchases)
+
+Currency converter widget — show prices in USD/AED/EUR
+
+Blog/News section — spice market updates, export tips (good for SEO)
+
+Video background or product video on hero section
+
+Back to top button
+
+Which of these do you want me to implement first?
+
+i want all but idont need testimonials video background thing i need rest first complete the pages we need
